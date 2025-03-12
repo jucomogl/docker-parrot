@@ -10,7 +10,6 @@ services:
     restart: always
     privileged: true   # Add the privileged option, SYS_ADMIN is limited, where privileged has full access
     working_dir: /usr
-    network_mode: host
     volumes:
       - ${PWD}:/core
     stdin_open: true
@@ -26,7 +25,6 @@ services:
     restart: always
     privileged: true   # Add the privileged option, SYS_ADMIN is limited, where privileged has full access
     working_dir: /usr
-    network_mode: host
     volumes:
       - ${PWD}:/security
     stdin_open: true
